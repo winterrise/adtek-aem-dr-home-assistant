@@ -28,7 +28,7 @@ modbus:
         address: 0x02   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop2_current"  # 電流
@@ -38,7 +38,7 @@ modbus:
         address: 0x03   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop3_current"  # 電流
@@ -48,7 +48,7 @@ modbus:
         address: 0x04   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop4_current"  # 電流
@@ -58,7 +58,7 @@ modbus:
         address: 0x05   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop5_current"  # 電流
@@ -68,7 +68,7 @@ modbus:
         address: 0x06   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop1_total_active_energy"  # 功率
@@ -78,7 +78,7 @@ modbus:
         address: 0x27   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop2_total_active_energy"  # 功率
@@ -88,7 +88,7 @@ modbus:
         address: 0x2B   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop3_total_active_power"  # 功率
@@ -108,7 +108,7 @@ modbus:
         address: 0x33   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop5_total_active_power"  # 功率
@@ -118,7 +118,7 @@ modbus:
         address: 0x37   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop1_total_power"  # 度數
@@ -129,7 +129,7 @@ modbus:
         address: 0x2A   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop2_total_power"  # 度數
@@ -140,7 +140,7 @@ modbus:
         address: 0x2E   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop3_total_power"  # 度數
@@ -151,7 +151,7 @@ modbus:
         address: 0x32   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop4_total_power"  # 度數
@@ -162,7 +162,7 @@ modbus:
         address: 0x36   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60
       - name: "loop5_total_power"  # 度數
@@ -173,7 +173,7 @@ modbus:
         address: 0x3A   # 寄存器位址
         input_type: holding
         data_type: int16  # 資料格式（根據設備手冊選擇）
-        scale: 0.001  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
+        scale: 0.01  # 如果數據需要縮放，設定比例，例如 0.1 代表數據需除以 10
         precision: 3  # 顯示的小數位數
         scan_interval : 60        
         
